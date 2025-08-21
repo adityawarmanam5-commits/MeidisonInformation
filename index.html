@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Dukungan & Komunitas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+    /* Background video */
+    .bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    /* Overlay gelap supaya card lebih jelas */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: 0;
+    }
+    /* Card */
+    .card {
+      position: relative;
+      z-index: 1;
+      background: #111111cc;
+      padding: 25px;
+      border-radius: 18px;
+      width: 420px;
+      margin: auto;
+      top: 50%;
+      transform: translateY(-50%);
+      box-shadow: 0 0 25px rgba(0,0,0,0.8), 0 0 30px rgba(255,140,0,0.5), 0 0 60px rgba(255,140,0,0.4);
+      border: 1px solid #ff8c00;
+      text-align: center;
+    }
+    .card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #222;
+      box-shadow: 0 0 20px rgba(255,140,0,0.7);
+    }
+    .card h2 {
+      margin-bottom: 12px;
+      font-size: 22px;
+      color: #ffffff;
+    }
+    .card p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #9ca3af;
+    }
+    .link-box {
+      display: flex;
+      align-items: center;
+      background: #1a1a1a;
+      margin: 12px 0;
+      padding: 14px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #f1f5f9;
+      font-weight: 500;
+      transition: 0.3s;
+      border: 1px solid #2a2a2a;
+    }
+    .link-box:hover {
+      background: #272727;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(255,140,0,0.6);
+    }
+    .link-box i {
+      font-size: 22px;
+      margin-right: 12px;
+    }
+    .saweria i {
+      color: #facc15;
+      text-shadow: 0 0 8px #facc15;
+    }
+    .discord i {
+      color: #5865f2;
+      text-shadow: 0 0 8px #5865f2;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background video -->
+  <video autoplay muted loop class="bg-video">
+    <source src="file:///F:/Album/Grid%20Pattern%20%20Black%20&%20white%20stripe%20%20Edit%20Elements%20-%20Edit%20Elements%20(720p,%20h264).mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+
+  <!-- Card -->
+  <div class="card">
+    <img src="file:///F:/Bahan%20Recording/logo/Gambar%20ChatGPT%20saya.png" alt="Avatar">
+    <h2>Dukungan & Komunitas</h2>
+
+    <a href="https://saweria.co/Meidison" target="_blank" class="link-box saweria">
+      <i class="fas fa-coins"></i> Donasi Saweria
+    </a>
+
+    <a href="https://discord.gg/6sG2p5M8X7" target="_blank" class="link-box discord">
+      <i class="fab fa-discord"></i> Discord Warga Indo Roleplay
+    </a>
+
+    <a href="https://discord.gg/GvyPNCE7py" target="_blank" class="link-box discord">
+      <i class="fab fa-discord"></i> Discord Parakang
+    </a>
+  </div>
+</body>
+</html>
